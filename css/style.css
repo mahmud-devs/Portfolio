@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 0.8;
+}
+
+p {
+  color: #444;
+}
+
+.nav {
+  padding: 30px 0 0 0;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav .container .nav__main ul li a {
+  transition: all linear 0.2s;
+  color: #fff !important;
+  font-weight: 600;
+}
+.nav .container .nav__main ul li a:hover {
+  color: rgba(255, 255, 255, 0.71) !important;
+}
+
+.nav.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all linear 0.2s;
+  left: 0;
+  top: 0;
+  padding: 0px 0;
+}
+
+#banner {
+  padding: 250px 0;
+  background: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+#banner .container .banner__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#banner .container .banner__heading h1 {
+  color: #fff;
+  font-size: 70px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+#banner .container .banner__heading h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+#banner .container .banner__icon {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+}
+#banner .container .banner__icon ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#banner .container .banner__icon ul li a {
+  font-size: 30px;
+  color: #fff;
+  transition: all linear 0.2s;
+}
+#banner .container .banner__icon ul li a:hover {
+  color: rgba(255, 255, 255, 0.71);
+}
+
+#about {
+  padding: 150px 0;
+  background-color: #f5f5f5;
+}
+#about .container p {
+  font-size: 15px;
+}
+#about .container h2 {
+  position: relative;
+  color: #151515;
+  font-size: 46px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 96px;
+}
+#about .container h2::after {
+  position: absolute;
+  content: "";
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 70px;
+  background-color: #1C1E53;
+}
+#about .container .about__main .about__detail .about__heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #1C1E53;
+  margin-bottom: 20px;
+}
+#about .container .about__main .about__detail .about__heading h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #151515;
+  margin-bottom: 20px;
+}
+#about .container .about__main .about__detail .about__heading p {
+  font-size: 15px;
+  border-bottom: 2px solid #1C1E53;
+  font-weight: 400;
+  line-height: 1.95;
+  padding-bottom: 20px;
+}
+#about .container .about__main .about__detail .about__heading .about__contact {
+  margin: 20px 0;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__name h5 {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__name span {
+  font-size: 15px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__email {
+  margin-bottom: 15px;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__email h5 {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__age h5 {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__age span {
+  font-size: 15px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__from h5 {
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #151515;
+}
+#about .container .about__main .about__detail .about__heading .about__contact .about__from span {
+  font-size: 15px;
+  color: #151515;
+}/*# sourceMappingURL=style.css.map */
