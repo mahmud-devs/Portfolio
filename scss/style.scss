@@ -1,10 +1,13 @@
 $black: #151515;
 $white: #fff;
 $gray: rgba(255, 255, 255, 0.71);
+$Dgray: rgba(26, 24, 24, 0.703);
+$lowgray: #e1e0e0;
 $peracolor: #444;
 $primarycolor: #1C1E53;
-
-
+$secondarycolor: #5c009e;
+$hoverpera: #9F9F9F;
+$hoverHcolor: #F0F0F0;
 $semibold: 600;
 
 
@@ -80,7 +83,7 @@ p{
     background: url(../images/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
     position: relative;
 
     .container{
@@ -156,9 +159,10 @@ p{
                 transform: translateX(-50%);
                 height: 3px;
                 width: 70px;
-                background-color: $primarycolor;
+                background-color: $secondarycolor;
             }
         }
+        // ------------about me---------
         .about__main{
             .about__img{
 
@@ -169,7 +173,7 @@ p{
                         font-size: 24px;
                         font-weight: 500;
                         text-transform: capitalize;
-                        color: $primarycolor;
+                        color: $secondarycolor;
                         margin-bottom: 20px;
                     }
                     h1{
@@ -233,6 +237,205 @@ p{
                                 color: $black;
                             }
                         }
+                    }
+                    .about__link{
+                        .about__download{
+                            a{
+                                padding: 13px 35px;
+                                background-color: $secondarycolor;
+                                border-radius: 25px;
+                                color: $white;
+                                font-size: 14px;
+                                margin-top: 10px;
+                                display: inline-block;
+                                transition: all linear 0.2s;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                        .about__icon{
+                            position: relative;
+                            ul{
+                                display: flex;
+                                gap: 15px;
+                                margin: 0;
+
+                                li{
+                                    a{
+                                        color: $black;
+                                        font-size: 25px;
+                                        transition: all linear 0.2s;
+                                        &:hover{
+                                            color: $Dgray;
+                                        }
+                                    }
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                left: -85px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                height: 1px;
+                                width: 60px;
+                                background-color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // -------------about service--------
+        .about__service_heading{
+            .service_heading{
+                margin-top: 50px;
+                .common_heading{
+                    p{
+                        font-size: 15px;
+                        margin-bottom: 25px;
+                    }
+                    h4{
+                        color: $black;
+                        font-size: 46px;
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        margin-bottom: 96px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        // ------------about card------
+        .about__service_card{
+            row-gap: 24px;
+            .about__card{
+                padding: 38px 42px;
+                background-color: $lowgray;
+                border-bottom: 5px solid transparent;
+                transition: all linear 0.3s;
+                border-radius: 5px;
+                &:hover{
+                    border-bottom: 5px solid $secondarycolor;
+                    background-color: rgba(22, 22, 22, 0.815);
+                    cursor: pointer;
+                    .card__logo{
+                        color: $secondarycolor;
+                    }
+                    .card__title{
+                        h4{
+                            color: $hoverHcolor;
+                        }
+                    }
+                    .card__pera{
+                        p{
+                            color: $hoverpera;
+                        }
+                    }
+                }
+
+                .card__logo{
+                    font-size: 50px;
+                    margin-bottom: 10px;
+                    color: $primarycolor;
+                    transition: all linear 0.3s;
+                }
+                .card__title{
+                    h4{
+                        font-size: 20px;
+                        font-weight: 500;
+                        letter-spacing: -.5px;
+                        margin-bottom: 14px;
+                        color: $black;
+                        transition: all linear 0.3s;
+                    }
+                }
+                .card__pera{
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.95;
+                        color: $peracolor;
+                        transition: all linear 0.3s;
+                    }
+                }
+            }
+        }
+        .review__main{
+            .slick__slider{
+                .review__card{
+                    padding: 48px 40px;
+                    margin: 0 15px;
+                    background-color: $lowgray;
+                    position: relative;
+                    overflow: hidden;
+                    &::after{
+                        content: '\f10e';
+                        position: absolute;
+                        right: 40px;
+                        top: 40px;
+                        color: $primarycolor;
+                        font-size: 50px;
+                        font-family: FontAwesome;
+                    }
+                    .review__detail{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 20px;
+                        .review__img{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .review__info{
+                            h4{
+                                font-size: 15px;
+                                font-weight: 400;
+                                margin-bottom: 10px;
+                                color: $black;
+                            }
+                            p{
+                                color:$peracolor ;
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                        
+                    }
+                    p{
+                        font-size: 14px;
+                        color: $peracolor;
+                        font-weight: 400;
+                        line-height: 1.95;
+                    }
+                }
+                .slick-dots{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    margin-top: 20px;
+                    li{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: rgba(106, 77, 244, 0.3);
+                        button{
+                            display: none;
+                        }
+                    }
+                    .slick-active{
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background: $primarycolor;
                     }
                 }
             }
