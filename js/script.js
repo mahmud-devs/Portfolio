@@ -17,6 +17,20 @@ $(function(){
             $(".nav").removeClass("fixed")
         }
     })
+
+
+	//   ========= Nav part Start =============
+    $(".nav-link").on('click',function(event){
+        if(this.hash !== ""){
+            event.preventDefault();
+        let hash = this.hash;
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
+        },1000,function(){
+            window.location.hash = hash;
+        });
+        }
+    })
     // ------preloader start here----
     $(window).on("load", function(){
         $(".preloader_main").delay(2000).fadeOut(500)
