@@ -34,6 +34,16 @@ p {
   margin-bottom: 50px;
 }
 
+.list__btn.btn__active {
+  color: #1b50c1;
+  border-bottom: 1px solid #1b50c1;
+  transition: all linear 0.3s;
+}
+
+.row-gap-5 {
+  row-gap: 50px !important;
+}
+
 .nav {
   padding: 15px 0;
   position: absolute;
@@ -66,7 +76,7 @@ p {
 
 #banner {
   padding: 250px 0;
-  background: url(../images/svgbg.svg);
+  background: url(../images/about.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -563,7 +573,7 @@ p {
   margin-bottom: 40px;
 }
 #resume .container .skill__main .skill__bg {
-  background: #4a28af;
+  background: #1b50c1;
   height: 100%;
   width: 90%;
   border-radius: 3px;
@@ -580,4 +590,81 @@ p {
   color: #444;
   font-size: 14px;
   font-weight: 400;
+}
+
+#portfolio {
+  padding: 50px 0;
+}
+#portfolio .container .portfolio__heading_main h4 {
+  position: relative;
+  margin-bottom: 100px;
+}
+#portfolio .container .portfolio__heading_main h4::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 70px;
+  background: #5c009e;
+}
+#portfolio .container ul li {
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#portfolio .container ul li:hover {
+  color: #1b50c1;
+}
+#portfolio .container .work__card {
+  margin-bottom: 24px;
+}
+
+#blog {
+  padding: 50px;
+}
+#blog .container .blog__heading_main h4 {
+  position: relative;
+  margin-bottom: 100px;
+}
+#blog .container .blog__heading_main h4::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 70px;
+  background: #5c009e;
+}
+#blog .container .blog__img {
+  position: relative;
+}
+#blog .container .blog__img img {
+  width: 100%;
+}
+#blog .container .blog__img .blog__date {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #1b50c1;
+  padding: 10px 15px;
+  margin: 0;
+}
+#blog .container .blog__img .blog__date h6 {
+  font-style: 8px;
+  color: #fff;
+  margin: 0;
+}
+#blog .container .blog__text a {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  color: #151515;
+}
+#blog .container .blog__text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
 }/*# sourceMappingURL=style.css.map */

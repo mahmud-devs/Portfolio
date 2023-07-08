@@ -22,6 +22,18 @@ $(function(){
         $(".preloader_main").delay(2000).fadeOut(500)
     })
 
+	// ========== portfolio active menu ========
+	$(".list__btn").click(function () {
+		console.log("clicked");
+		$(this).addClass("btn__active").siblings().removeClass("btn__active");
+	})
+
+	var mixer = mixitup('.work_item_mix', {
+		controls: {
+			toggleLogic: 'and'
+		}
+	  });
+
 });
 
 // ----------------typed--------------

@@ -7,7 +7,7 @@ $lowgray: #e1e0e0;
 $peracolor: #444;
 $primarycolor: #1C1E53;
 $secondarycolor: #5c009e;
-$purple:#4a28af ;
+$purple:#1b50c1 ;
 $hoverpera: #9F9F9F;
 $hoverHcolor: #F0F0F0;
 $card: #95e1d3;
@@ -53,6 +53,16 @@ p{
     }
 }
 
+
+.list__btn.btn__active {
+	color: $purple;
+	border-bottom: 1px solid $purple;
+    transition: all linear 0.3s;
+}
+
+.row-gap-5{
+    row-gap: 50px !important;
+}
 
 // ---------------nav start here-----------
 
@@ -100,7 +110,7 @@ p{
 
 #banner{
     padding: 250px 0;
-    background: url(../images/svgbg.svg);
+    background: url(../images/about.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +169,10 @@ p{
 #about{
     padding: 150px 0;
     background-color: #f5f5f5;
+    // background: url(../images/ggg.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 
     .container{
         p{
@@ -710,13 +724,111 @@ p{
 }
 
 
-
-
-
-
 // --------------resume end here--------
 
+// -------------portfolio start here-----
 
+#portfolio{
+    padding: 50px 0;
+    .container{
+        .portfolio__heading_main{
+            h4{
+                position: relative;
+                margin-bottom: 100px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    width: 70px;
+                    background: #5c009e;
+                }
+            }
+        }
+        ul{
+            li{
+                cursor: pointer;
+                transition: all linear 0.3s;
+                &:hover{
+                    color: $purple;
+                }
+            }
+        }
+
+        .work__card{
+            margin-bottom: 24px;
+        }
+    }
+}
+
+
+// -------------portfolio end here-----
+
+// ------------blog start here---------
+
+#blog{
+    padding: 50px;
+    .container{
+        .blog__heading_main{
+            h4{
+                position: relative;
+                margin-bottom: 100px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 3px;
+                    width: 70px;
+                    background: #5c009e;
+                }
+            }
+        }
+        // ---------blog content------
+        .blog__img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .blog__date{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background: $purple;
+                padding: 10px 15px;
+                margin: 0;
+                h6{
+                    font-style: 8px;
+                    color: $white;
+                    margin: 0;
+                }
+            }
+        }
+        .blog__text{
+            a{
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: .1px;
+                color: $black;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.7;
+                color: $peracolor;
+            }
+        }
+    }
+}
+
+
+
+
+
+// ------------blog end here---------
 
 
 
