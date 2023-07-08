@@ -253,23 +253,27 @@ p {
 #about .container .about__main .about__detail .about__heading .about__link .about__download a:hover {
   opacity: 0.7;
 }
-#about .container .about__main .about__detail .about__heading .about__link .about__icon {
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon {
+  display: flex;
+  align-items: center;
+}
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon {
   position: relative;
 }
-#about .container .about__main .about__detail .about__heading .about__link .about__icon ul {
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon ul {
   display: flex;
   gap: 15px;
   margin: 0;
 }
-#about .container .about__main .about__detail .about__heading .about__link .about__icon ul li a {
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon ul li a {
   color: #151515;
   font-size: 25px;
   transition: all linear 0.2s;
 }
-#about .container .about__main .about__detail .about__heading .about__link .about__icon ul li a:hover {
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon ul li a:hover {
   color: rgba(26, 24, 24, 0.703);
 }
-#about .container .about__main .about__detail .about__heading .about__link .about__icon::after {
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon::after {
   content: "";
   position: absolute;
   left: -85px;
