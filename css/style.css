@@ -21,14 +21,29 @@ p {
   color: #444;
 }
 
+.common_heading p {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.common_heading h4 {
+  color: #151515;
+  font-size: 46px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 96px;
+  margin-bottom: 50px;
+}
+
 .nav {
-  padding: 30px 0 0 0;
+  padding: 15px 0;
   position: absolute;
   z-index: 999;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
+  transition: all linear 0.3s;
+  background-color: rgba(21, 21, 21, 0.799);
 }
 .nav .container .nav__main ul li a {
   transition: all linear 0.2s;
@@ -51,7 +66,7 @@ p {
 
 #banner {
   padding: 250px 0;
-  background: url(../images/bg.jpg);
+  background: url(../images/svgbg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,4 +369,215 @@ p {
   height: 12px;
   border-radius: 50%;
   background: #1C1E53;
+}
+#about .container .plan__main_heading .plan__heading {
+  margin-top: 50px;
+}
+#about .container .plan__card_main .plan__card {
+  background-color: #e1e0e0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card:hover {
+  background-color: rgba(22, 22, 22, 0.909);
+  cursor: pointer;
+  margin-top: 0;
+}
+#about .container .plan__card_main .plan__card:hover .plan__logo {
+  font-size: 50px;
+  color: #5c009e;
+  margin-bottom: 20px;
+}
+#about .container .plan__card_main .plan__card:hover h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #F0F0F0;
+}
+#about .container .plan__card_main .plan__card:hover h5 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 22px;
+  line-height: 1.2;
+  color: #F0F0F0;
+}
+#about .container .plan__card_main .plan__card:hover ul {
+  margin-bottom: 20px !important;
+  overflow-x: hidden !important;
+  padding: 0;
+}
+#about .container .plan__card_main .plan__card:hover ul li {
+  color: #9F9F9F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+#about .container .plan__card_main .plan__card:hover a {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #5c009e !important;
+  border: 1px solid #1C1E53 !important;
+  color: #fff;
+}
+#about .container .plan__card_main .plan__card .plan__logo {
+  font-size: 50px;
+  color: #1C1E53;
+  margin-bottom: 20px;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card h4 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #151515;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card h5 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 22px;
+  line-height: 1.2;
+  color: #151515;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card ul {
+  margin-bottom: 20px !important;
+  overflow-x: hidden !important;
+  padding: 0;
+}
+#about .container .plan__card_main .plan__card ul li {
+  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card a {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #1C1E53 !important;
+  border: 1px solid #1C1E53 !important;
+  color: #fff;
+  transition: all linear 0.3s;
+}
+#about .container .plan__card_main .plan__card a:hover {
+  opacity: 0.7;
+}
+
+#resume {
+  padding: 100px 0;
+}
+#resume .container .resume__heading_main .common_heading h4 {
+  position: relative;
+}
+#resume .container .resume__heading_main .common_heading h4::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 70px;
+  background: #5c009e;
+}
+#resume .container .resume__main .resume__main_name {
+  margin-top: 60px;
+}
+#resume .container .resume__main .resume__main_name h4 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #151515;
+  margin-left: 20px;
+}
+#resume .container .resume__main .resume__item .resume__card {
+  background-color: #e1e0e0;
+  border-left: 2px solid #1C1E53;
+  padding: 32px 48px;
+  position: relative;
+  border-bottom: 1px solid #313131;
+  transition: all linear 0.3s;
+}
+#resume .container .resume__main .resume__item .resume__card::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 0;
+  top: 40px;
+  background: #1C1E53;
+  border-radius: 0 10px 10px 0;
+  transition: all linear 0.3s;
+}
+#resume .container .resume__main .resume__item .resume__card:hover {
+  background-color: rgba(22, 22, 22, 0.909);
+  cursor: pointer;
+  border-left: 2px solid #5c009e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.71);
+}
+#resume .container .resume__main .resume__item .resume__card:hover::after {
+  background-color: #95e1d3;
+}
+#resume .container .resume__main .resume__item .resume__card:hover h5 {
+  color: #F0F0F0;
+}
+#resume .container .resume__main .resume__item .resume__card:hover p {
+  color: #9F9F9F;
+}
+#resume .container .resume__main .resume__item .resume__card h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #151515;
+  transition: all linear 0.3s;
+}
+#resume .container .resume__main .resume__item .resume__card p {
+  font-size: 14px;
+  line-height: 1.95;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #444;
+  transition: all linear 0.3s;
+}
+#resume .container .resume__skill_main {
+  margin: 50px 0;
+}
+#resume .container .skill__main {
+  background: #e1e0e0;
+  height: 14px;
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+#resume .container .skill__main .skill__bg {
+  background: #4a28af;
+  height: 100%;
+  width: 90%;
+  border-radius: 3px;
+}
+#resume .container .skill__main .skill__text {
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+#resume .container .skill__main .skill__text p {
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

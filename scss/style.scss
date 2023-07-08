@@ -1,4 +1,5 @@
 $black: #151515;
+$sblack: rgba(22, 22, 22, 0.909);
 $white: #fff;
 $gray: rgba(255, 255, 255, 0.71);
 $Dgray: rgba(26, 24, 24, 0.703);
@@ -6,8 +7,10 @@ $lowgray: #e1e0e0;
 $peracolor: #444;
 $primarycolor: #1C1E53;
 $secondarycolor: #5c009e;
+$purple:#4a28af ;
 $hoverpera: #9F9F9F;
 $hoverHcolor: #F0F0F0;
+$card: #95e1d3;
 $semibold: 600;
 
 
@@ -28,24 +31,41 @@ ul,ol{
 }
 h1,h2,h3,h4,h5,h6,p{
     line-height: 0.8;
-}  
+}
 p{
     color: $peracolor;
 }
 // .container{
 //     width: 1320px;
 // }
+.common_heading{
+    p{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+    h4{
+        color: $black;
+        font-size: 46px;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 96px;
+        margin-bottom: 50px;
+    }
+}
+
 
 // ---------------nav start here-----------
 
 .nav {
-    padding: 30px 0 0 0;
+    padding: 15px 0;
 	position: absolute;
     z-index: 999;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 100;
+    transition: all linear 0.3s;
+    background-color: rgba(21, 21, 21, 0.799);
     .container{
         .nav__main{
             ul{
@@ -80,7 +100,7 @@ p{
 
 #banner{
     padding: 250px 0;
-    background: url(../images/bg.jpg);
+    background: url(../images/svgbg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,6 +382,7 @@ p{
                 }
             }
         }
+        // -------------review ----------
         .review__main{
             .slick__slider{
                 .review__card{
@@ -407,7 +428,7 @@ p{
                                 font-weight: 400;
                             }
                         }
-                        
+
                     }
                     p{
                         font-size: 14px;
@@ -440,6 +461,251 @@ p{
                 }
             }
         }
+        // ----------plan heading---------
+        .plan__main_heading{
+            .plan__heading{
+                margin-top: 50px;
+            }
+        }
+        // -----------plan card------------
+        .plan__card_main{
+            .plan__card{
+                background-color: $lowgray;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, .05);
+                padding: 50px 0;
+                text-align: center;
+                margin-top: 50px;
+                border-radius: 10px;
+                transition: all linear 0.3s;
+
+                &:hover{
+                    background-color: $sblack;
+                    cursor: pointer;
+                    margin-top: 0;
+                    .plan__logo{
+                        font-size: 50px;
+                        color: $secondarycolor;
+                        margin-bottom: 20px;
+                    }
+                    h4{
+                        font-size: 28px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        color: $hoverHcolor;
+                    }
+                    h5{
+                        font-size: 26px;
+                        font-weight: 300;
+                        margin-bottom: 22px;
+                        line-height: 1.2;
+                        color: $hoverHcolor;
+                    }
+                    ul{
+                        margin-bottom: 20px !important;
+                        overflow-x: hidden !important;
+                        padding: 0;
+                        li{
+                            color: $hoverpera;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 2.5;
+                        }
+                    }
+                    a{
+                        display: inline-block;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        padding: 10px 35px;
+                        border-radius: 30px;
+                        font-size: 16px;
+                        background-color: $secondarycolor !important;
+                        border: 1px solid $primarycolor !important;
+                        color: $white;
+                    }
+                }
+
+                .plan__logo{
+                    font-size: 50px;
+                    color: $primarycolor;
+                    margin-bottom: 20px;
+                    transition: all linear 0.3s;
+                }
+                h4{
+                    font-size: 28px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: $black;
+                    transition: all linear 0.3s;
+                }
+                h5{
+                    font-size: 26px;
+                    font-weight: 300;
+                    margin-bottom: 22px;
+                    line-height: 1.2;
+                    color: $black;
+                    transition: all linear 0.3s;
+                }
+                ul{
+                    margin-bottom: 20px !important;
+                    overflow-x: hidden !important;
+                    padding: 0;
+                    li{
+                        color: $peracolor;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 2.5;
+                        transition: all linear 0.3s;
+                    }
+                }
+                a{
+                    display: inline-block;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding: 10px 35px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                    background-color: $primarycolor !important;
+                    border: 1px solid $primarycolor !important;
+                    color: $white;
+                    transition: all linear 0.3s;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}
+
+// ----------------about end here---------
+
+// --------------resume start here--------
+
+#resume{
+    padding: 100px 0;
+
+    .container{
+        .resume__heading_main{
+            .common_heading{
+                h4{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 3px;
+                        width: 70px;
+                        background: $secondarycolor;
+                    }
+                }
+            }
+        }
+        .resume__main{
+
+            // ---------education part-------
+            .resume__main_name{
+                margin-top: 60px;
+                h4{
+                    font-size: 26px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    color: $black;
+                    margin-left: 20px;
+                }
+            }
+            .resume__item{
+                
+                .resume__card{
+                    background-color: $lowgray;
+                    border-left: 2px solid $primarycolor;
+                    padding: 32px 48px;
+                    position: relative;
+                    border-bottom: 1px solid #313131;
+                    transition: all linear 0.3s;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 16px;
+                        width: 16px;
+                        left: 0;
+                        top: 40px;
+                        background: $primarycolor;
+                        border-radius: 0 10px 10px 0;
+                        transition: all linear 0.3s;
+                    }
+                    &:hover{
+                        background-color: $sblack;
+                        cursor: pointer;
+                        border-left: 2px solid $secondarycolor;
+                        border-bottom: 1px solid $gray;
+                        &::after{
+                            background-color: $card;
+                        }
+                        h5{
+                            color: $hoverHcolor;
+        
+                        }
+                        p{
+                            color: $hoverpera;
+                        }
+                    }
+    
+                    h5{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        color: $black;
+                        transition: all linear 0.3s;
+    
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 1.95;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        color: $peracolor;
+                        transition: all linear 0.3s;
+                    }
+                }
+            }
+            
+        }
+        .resume__skill_main{
+            margin: 50px 0;
+        }
+        .skill__main{
+            background: $lowgray;
+            height: 14px;
+            width: 100%;
+            position: relative;
+            border-radius: 3px;
+            margin-bottom: 40px;
+            .skill__bg{
+                background: $purple;
+                height: 100%;
+                width: 90%;
+                border-radius: 3px;
+            }
+            .skill__text{
+                position: absolute;
+                top: -20px;
+                left: 5px;
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+                p{
+                    color: $peracolor;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
     }
 }
 
@@ -447,9 +713,8 @@ p{
 
 
 
-// ----------------about end here---------
 
-
+// --------------resume end here--------
 
 
 
