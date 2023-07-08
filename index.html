@@ -19,6 +19,8 @@
 
     <!-- --------------custom css----------------- -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- -----------------responsive css------------------ -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -44,10 +46,10 @@
     <nav class="navbar navbar-expand-lg navbar-light nav " id="navbar">
         <div class="container ">
             <a class="navbar-brand" href="#">
-                <img src="images/logo - Copy1.png" alt="img">
+                <img class="img-fluid" src="images/logo - Copy1.png" alt="img">
             </a>
             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar__icon"><i class="fa-solid fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse nav__main" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -116,11 +118,11 @@
             <h2 class="text-center">about me</h2>
             <!-- ---------about me-------------- -->
             <div class="row about__main">
-                <div class="col-lg-6 about__img ">
+                <div class="col-sm-12  col-lg-6  about__img ">
                     <img src="images/team1.jpg" alt="img"
                     class="img-fluid">
                 </div>
-                <div class="col-lg-6 about__detail ">
+                <div class="col-sm-12  col-lg-6 about__detail ">
                     <div class="about__heading">
                         <h3>who am i?</h3>
                         <h1>I'm Mahmudul Islam, a responsive Web designer.</h1>
@@ -128,26 +130,26 @@
                             I am not a freelancer right now and i have been building noteworthy some resposive web designs for months, which comply with the latest design trends. I help convert to figma to html, psd to html and convert to bootstrap.iterate fast and deliver faster.
                         </p>
                         <div class="row  about__contact">
-                            <div class="col-lg-6">
+                            <div class="col-sm-12  col-lg-6">
                                 <div class="about__name">
                                     <h5>Name:</h5>
                                     <span>Mahmudul Islam</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-12  col-lg-6">
                                 <div class="about__email">
                                     <h5>Email: </h5>
                                     <span> <a href="mailto:mahmudulislam0999@gmail.com">mahmudulislam0999@gmail.com</a>
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-12  col-lg-6">
                                 <div class="about__age">
                                     <h5>Age:</h5>
                                     <span>21</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-sm-12  col-lg-6">
                                 <div class="about__from">
                                     <h5>From:</h5>
                                     <span> Dhaka, Bangladesh</span>
@@ -155,26 +157,31 @@
                             </div>
                         </div>
                         <div class="row about__link d-flex align-items-center">
-                            <div class="col-lg-6">
-                                <div class="about__download">
-                                    <a href="#">Download CV</a>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-sm-6  col-lg-6">
+                                        <div class="about__download">
+                                            <a href="#">Download CV</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6  col-lg-6 cv__icon" >
+                                        <div class="about__icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="about__icon">
-                                    <ul>
-                                        <li>
-                                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -182,7 +189,7 @@
             <!-- --------------about services--------- -->
             <div id="service">
                 <div class="row about__service_heading">
-                    <div class="col-lg-12 service_heading">
+                    <div class="col-12 col-lg-12 service_heading">
                         <div class="common_heading">
                             <p>Services i offer to my clients</p>
                             <h4>My Services</h4>
@@ -190,7 +197,7 @@
                     </div>
                 </div>
                 <div class="row about__service_card">
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -203,7 +210,7 @@
                             </div>
                         </div>
                     </div>                
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -216,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -229,7 +236,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -242,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -255,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-6  col-lg-4">
                         <div class="about__card">
                             <div class="card__logo">
                                 <i class="fa-brands fa-css3-alt"></i>
@@ -354,7 +361,7 @@
             </div>
             <!-- ----------------plan card------------- -->
             <div class="row plan__card_main">
-                <div class="col-lg-4">
+                <div class="col-sm-12  col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -374,7 +381,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12  col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -394,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-12  col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -582,7 +589,7 @@
                         <li class="list__btn mixitup-control-active btn__active" data-filter="all">All</li>
                         <li class="list__btn" data-filter=".brand">Brand</li>
                         <li class="list__btn" data-filter=".design">Design</li>
-                        <li class="list__btn" data-filter=".photos">Photos</li>
+                        <li class="list__btn" data-filter=".photo">Photos</li>
                     </ul>
                 </div>
             </div>
@@ -596,7 +603,15 @@
                     </a>
                      
                 </div>
-                <div class="col-sm-6  col-md-4  col-lg-4 mix all brand" >
+                <div class="col-sm-6  col-md-4  col-lg-4 mix all design" >
+                    <a href="#">
+                        <div class=" work__card" >
+                            <img class="img-fluid" src="images/portfolio_card.png" alt="img">   
+                        </div>
+                    </a>
+                     
+                </div>
+                <div class="col-sm-6  col-md-4  col-lg-4 mix all photo" >
                     <a href="#">
                         <div class=" work__card" >
                             <img class="img-fluid" src="images/portfolio_card.png" alt="img">   
@@ -612,7 +627,7 @@
                     </a>
                      
                 </div>
-                <div class="col-sm-6  col-md-4  col-lg-4 mix all brand" >
+                <div class="col-sm-6  col-md-4  col-lg-4 mix all design" >
                     <a href="#">
                         <div class=" work__card" >
                             <img class="img-fluid" src="images/portfolio_card.png" alt="img">   
@@ -620,15 +635,7 @@
                     </a>
                      
                 </div>
-                <div class="col-sm-6  col-md-4  col-lg-4 mix all brand" >
-                    <a href="#">
-                        <div class=" work__card" >
-                            <img class="img-fluid" src="images/portfolio_card.png" alt="img">   
-                        </div>
-                    </a>
-                     
-                </div>
-                <div class="col-sm-6  col-md-4  col-lg-4 mix all brand" >
+                <div class="col-sm-6  col-md-4  col-lg-4 mix all photo" >
                     <a href="#">
                         <div class=" work__card" >
                             <img class="img-fluid" src="images/portfolio_card.png" alt="img">   
@@ -655,7 +662,7 @@
             </div>
             <!-- --------blog content-------------- -->
             <div class="row row-gap-5">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">
@@ -670,7 +677,7 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">
@@ -685,7 +692,7 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">
@@ -700,7 +707,7 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">
@@ -715,7 +722,7 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">
@@ -730,7 +737,7 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-sm-6  col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
                             <img src="images/blog_img.jpg" alt="blog img" class="img-fluid w-100">

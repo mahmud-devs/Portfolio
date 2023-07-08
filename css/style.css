@@ -66,6 +66,15 @@ p {
   opacity: 0.8;
 }
 
+.navbar__icon i {
+  color: #fff;
+  font-size: 25px;
+}
+
+.navbar-light .navbar-toggler {
+  border: 2px solid #fff;
+}
+
 .nav {
   padding: 15px 0;
   position: absolute;
