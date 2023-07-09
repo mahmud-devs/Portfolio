@@ -7,11 +7,25 @@
     margin-top: 35px;
 }
 
+#about .container .about__main .about__detail .about__heading .about__link .about__download a {
+	padding: 8px 20px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+html body section#contact div.container div.row div.col-lg-6 ul.list-unstyled.contact__info.mt-4 li.info__main.d-flex.gap-4.align-items-center div.info__detail p.info__title a{
+    font-size: 12px;
+}
+
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon::after {
+	left: -40px;
+	width: 48px;
+}
 
 
-
-
-
+#about .container .about__main .about__detail .about__heading .about__link .cv__icon .about__icon ul li a {
+	font-size: 18px;
+}
 /* -----------bottom to top--------- */
 
 
