@@ -1,7 +1,15 @@
 /* =============extra small========== */@media (max-width:575.98px){
 
 
-/* ------------common---------- */
+/* ------------contact ---------- */
+.mb-4 {
+	margin-bottom: 1.5rem !important;
+    margin-top: 35px;
+}
+
+
+
+
 
 
 /* -----------bottom to top--------- */
@@ -70,6 +78,7 @@
         height: 150px !important;
         width: 150px !important;
         border-radius: 50%;
+        border: 10px solid rgba(18, 115, 115, 0.6);
     }
 
     .about__heading{
@@ -216,7 +225,11 @@
 @media (min-width:576px) and (max-width:767.98px){
 
 
-/* ------------common---------- */
+/* ------------contact ---------- */
+.mb-4 {
+	margin-bottom: 1.5rem !important;
+    margin-top: 35px;
+}
 
 
 
@@ -276,6 +289,7 @@
         height: 150px !important;
         width: 150px !important;
         border-radius: 50%;
+        border: 10px solid rgba(18, 115, 115, 0.6);
     }
 
     .about__heading{
@@ -406,7 +420,11 @@
 @media (min-width:768px) and (max-width:991.98px){
 
 
-/* ------------common---------- */
+/* ------------contact ---------- */
+.mb-4 {
+	margin-bottom: 1.5rem !important;
+    margin-top: 35px;
+}
 
     /* -------------banner part----------- */
 
@@ -462,6 +480,7 @@
         height: 250px !important;
         width: 250px !important;
         border-radius: 50%;
+        border: 15px solid rgba(18, 115, 115, 0.6);
     }
 
     .about__heading{

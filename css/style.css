@@ -418,50 +418,53 @@ p {
 #about .container .plan__main_heading .plan__heading {
   margin-top: 50px;
 }
-#about .container .plan__card_main .plan__card {
+#about .container .plan__card_main .plan__card_start {
+  margin-top: 50px;
+}
+#about .container .plan__card_main .plan__card_start .plan__card {
   background-color: #e1e0e0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   padding: 50px 0;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   border-radius: 10px;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card:hover {
+#about .container .plan__card_main .plan__card_start .plan__card:hover {
   background-color: rgba(22, 22, 22, 0.909);
   cursor: pointer;
-  margin-top: 0;
+  margin-top: -50px;
 }
-#about .container .plan__card_main .plan__card:hover .plan__logo {
+#about .container .plan__card_main .plan__card_start .plan__card:hover .plan__logo {
   font-size: 50px;
   color: #5c009e;
   margin-bottom: 20px;
 }
-#about .container .plan__card_main .plan__card:hover h4 {
+#about .container .plan__card_main .plan__card_start .plan__card:hover h4 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #F0F0F0;
 }
-#about .container .plan__card_main .plan__card:hover h5 {
+#about .container .plan__card_main .plan__card_start .plan__card:hover h5 {
   font-size: 26px;
   font-weight: 300;
   margin-bottom: 22px;
   line-height: 1.2;
   color: #F0F0F0;
 }
-#about .container .plan__card_main .plan__card:hover ul {
+#about .container .plan__card_main .plan__card_start .plan__card:hover ul {
   margin-bottom: 20px !important;
   overflow-x: hidden !important;
   padding: 0;
 }
-#about .container .plan__card_main .plan__card:hover ul li {
+#about .container .plan__card_main .plan__card_start .plan__card:hover ul li {
   color: #9F9F9F;
   font-size: 16px;
   font-weight: 400;
   line-height: 2.5;
 }
-#about .container .plan__card_main .plan__card:hover a {
+#about .container .plan__card_main .plan__card_start .plan__card:hover a {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -472,20 +475,20 @@ p {
   border: 1px solid #1C1E53 !important;
   color: #fff;
 }
-#about .container .plan__card_main .plan__card .plan__logo {
+#about .container .plan__card_main .plan__card_start .plan__card .plan__logo {
   font-size: 50px;
   color: #1C1E53;
   margin-bottom: 20px;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card h4 {
+#about .container .plan__card_main .plan__card_start .plan__card h4 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #151515;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card h5 {
+#about .container .plan__card_main .plan__card_start .plan__card h5 {
   font-size: 26px;
   font-weight: 300;
   margin-bottom: 22px;
@@ -493,19 +496,19 @@ p {
   color: #151515;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card ul {
+#about .container .plan__card_main .plan__card_start .plan__card ul {
   margin-bottom: 20px !important;
   overflow-x: hidden !important;
   padding: 0;
 }
-#about .container .plan__card_main .plan__card ul li {
+#about .container .plan__card_main .plan__card_start .plan__card ul li {
   color: #444;
   font-size: 16px;
   font-weight: 400;
   line-height: 2.5;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card a {
+#about .container .plan__card_main .plan__card_start .plan__card a {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -517,7 +520,7 @@ p {
   color: #fff;
   transition: all linear 0.3s;
 }
-#about .container .plan__card_main .plan__card a:hover {
+#about .container .plan__card_main .plan__card_start .plan__card a:hover {
   opacity: 0.7;
 }
 
@@ -703,4 +706,93 @@ p {
   font-weight: 400;
   line-height: 1.7;
   color: #444;
+}
+
+#contact {
+  padding: 75px 0;
+  background-color: rgba(63, 139, 185, 0.12);
+}
+#contact .container .contact__heading_main h4 {
+  position: relative;
+  margin-bottom: 100px;
+}
+#contact .container .contact__heading_main h4::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 70px;
+  background: #5c009e;
+}
+#contact .container .mb-3 {
+  margin-bottom: 16px;
+}
+#contact .container .form__para {
+  font-size: 16px;
+  line-height: 1.95;
+  font-weight: 400;
+  color: #444;
+}
+#contact .container .info__logo {
+  font-size: 30px;
+  color: #1b50c1;
+}
+#contact .container .info__detail {
+  border-left: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 0 12px 22px;
+  border-left: 1px solid #1b50c1;
+}
+#contact .container .info__detail .info__name {
+  margin-bottom: 15px;
+  color: #151515;
+}
+
+.form input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #444 !important;
+}
+
+.form input::placeholder, textarea::placeholder {
+  color: #444 !important;
+}
+
+.form input, textarea {
+  background: rgba(37, 106, 117, 0.439) !important;
+  color: #151515 !important;
+  caret-color: #1b50c1;
+}
+
+.form input, textarea {
+  border: none !important;
+  padding: 15px 25px !important;
+}
+
+.error__msg {
+  padding: 10px 0 0 15px;
+}
+
+.form__btn {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: #1b50c1;
+  color: #fff;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.form__btn:hover {
+  opacity: 0.7;
+}
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+  box-shadow: inset 0 -3px 0 #1C1E53;
 }/*# sourceMappingURL=style.css.map */
